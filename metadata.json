@@ -1,0 +1,10 @@
+{
+  "name": "PatelSync AI",
+  "description": "An intelligent, proactive productivity companion that helps prioritize commitments, break down complex goals, generate actionable schedules, and assist via chat and voice.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

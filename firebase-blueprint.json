@@ -1,0 +1,57 @@
+{
+  "collections": {
+    "users": {
+      "description": "User preferences and profiles",
+      "fields": {
+        "uid": { "type": "string", "required": true },
+        "email": { "type": "string", "required": true },
+        "displayName": { "type": "string" },
+        "wakeTime": { "type": "string" },
+        "sleepTime": { "type": "string" },
+        "focusPreferences": { "type": "string" }
+      }
+    },
+    "tasks": {
+      "description": "User tasks and focus stacks",
+      "fields": {
+        "userId": { "type": "string", "required": true },
+        "title": { "type": "string", "required": true },
+        "description": { "type": "string" },
+        "deadline": { "type": "string" },
+        "duration": { "type": "number" },
+        "category": { "type": "string" },
+        "energyLevel": { "type": "string" },
+        "priority": { "type": "string" },
+        "status": { "type": "string" },
+        "subtasks": { "type": "array" }
+      }
+    },
+    "habits": {
+      "description": "User habits and completion streaks",
+      "fields": {
+        "userId": { "type": "string", "required": true },
+        "title": { "type": "string", "required": true },
+        "streak": { "type": "number" },
+        "completedDates": { "type": "array" }
+      }
+    },
+    "goals": {
+      "description": "User weekly milestones and goals",
+      "fields": {
+        "userId": { "type": "string", "required": true },
+        "title": { "type": "string", "required": true },
+        "completed": { "type": "boolean" }
+      }
+    },
+    "timeBlocks": {
+      "description": "User hourly daily schedules",
+      "fields": {
+        "userId": { "type": "string", "required": true },
+        "time": { "type": "string" },
+        "taskTitle": { "type": "string" },
+        "activityType": { "type": "string" },
+        "description": { "type": "string" }
+      }
+    }
+  }
+}
